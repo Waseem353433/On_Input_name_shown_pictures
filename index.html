@@ -14,41 +14,57 @@
       align-items: center;
       flex-direction: column;
     }
+    button{
+      border: 2px solid black;
+      font-family:'Times New Roman', Times, serif;
+      font-size: 50px;
+      border-radius: 20px;
+    }
+    button:hover{
+      background-color: blue;
+      border: 2px solid red;
+      box-shadow: 4px 4px 4px 4px black;
+    }
+    
   </style>
 </head>
 
 <body>
   <img src="" alt="">
   <h1></h1>
+  <button>Check Your Image</button>
 
 
 
   <script>
     let image = document.querySelector("img")
     let heading = document.querySelector("h1")
-    let name = prompt("Enter the Name [panda, kalu, snack, tabidar, tokaa, farrar]")
-    console.log(name);
-    if (name === "kalu") {
+    let btn = document.querySelector("button")
+    // let name = prompt("Enter the Name [panda, kalu, snack, tabidar, tokaa, farrar]")
+    // console.log(name);
+    btn.addEventListener("click",()=>{
+      let num = Math.ceil(Math.random()*6)
+      if (num === 1) {
       image.src = "assests/haseeb.png"
       heading.textContent = "This is Kalu Boy"
-    } else if (name === "panda") {
+    } else if (num === 2) {
       image.src = "assests/behroz.png"
       heading.textContent = "This is Panda Boy"
-    }else if(name === "snack"){
+    }else if(num === 3){
       image.src = "assests/Sufyan.png"
       heading.textContent = "This is Eagle Boy"
-    }else if (name === "tabidar"){
+    }else if (num === 4){
       image.src = "assests/sudais.png"
       heading.textContent = "This is Tabidar Boy"
-    }else if(name === "tokaa"){
+    }else if(num === 5){
       image.src = "assests/jawad.png"
       heading.textContent = "This is Tokaa Boy"
-    }else if(name === "farrar"){
+    }else{
       image.src = "assests/saad.png"
       heading.textContent = "This is Syed farar Ali shah "
-    }else{
-      heading.textContent = "You Entered Wrong name"
     }
+    })
+    
   </script>
 </body>
 
