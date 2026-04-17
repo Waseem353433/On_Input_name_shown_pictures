@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: blueviolet;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="" alt="">
+  <h1></h1>
+
+
+
+  <script>
+    let image = document.querySelector("img")
+    let heading = document.querySelector("h1")
+    let name = prompt("Enter the Name [panda, kalu, snack, tabidar, tokaa, farrar]")
+    console.log(name);
+    if (name === "kalu") {
+      image.src = "assests/haseeb.png"
+      heading.textContent = "This is Kalu Boy"
+    } else if (name === "panda") {
+      image.src = "assests/behroz.png"
+      heading.textContent = "This is Panda Boy"
+    }else if(name === "snack"){
+      image.src = "assests/Sufyan.png"
+      heading.textContent = "This is Eagle Boy"
+    }else if (name === "tabidar"){
+      image.src = "assests/sudais.png"
+      heading.textContent = "This is Tabidar Boy"
+    }else if(name === "tokaa"){
+      image.src = "assests/jawad.png"
+      heading.textContent = "This is Tokaa Boy"
+    }else if(name === "farrar"){
+      image.src = "assests/saad.png"
+      heading.textContent = "This is Syed farar Ali shah "
+    }else{
+      heading.textContent = "You Entered Wrong name"
+    }
+  </script>
+</body>
+
+</html>
